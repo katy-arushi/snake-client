@@ -4,10 +4,10 @@ console.log('Connecting ...');
 connect();
 
 /**
- * Setup User Interface 
+ * Setup User Interface
  * Specifically, so that we can handle user input via stdin
  */
- const setupInput = function() {
+const setupInput = function() {
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
