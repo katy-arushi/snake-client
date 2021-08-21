@@ -12,7 +12,7 @@ This project was created and published by [Arushi Katyal](https://github.com/kat
 
 ## Final Product
 
-!["Example Game"](/snake-client/Screenshots/"Woohoo!".png)
+!["Example Game"](https://raw.github.com/{katy-arushi}/{snake-client}/{master}/{/Screenshots/"Woohoo!".png})
 
 
 ## Getting Started
