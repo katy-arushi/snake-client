@@ -1,34 +1,34 @@
 // Stores the active TCP connection object.
 let connection;
 
- const setUpInput = function(conn) {
+const setUpInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
+  stdin.on('data', handleUserInput);
   stdin.resume();
-  stdin.on();
   return stdin;
 };
 
-const handleUserInput = function() {
+const handleUserInput = function(key) {
+  const stdin = process.stdin;
   stdin.on('data', (key) => {
     if (key === '\u0003') {
       process.exit();
     }
     if (key === 'w') {
-      conn.write("Move: up");
+      connection.write("Move: up");
     }
     if (key === 'a') {
-      conn.write("Move: left");
+      connection.write("Move: left");
     }
     if (key === 's') {
-      conn.write("Move: down");
+      connection.write("Move: down");
     }
     if (key === 'd') {
-      conn.write("Move: right");
+      connection.write("Move: right");
     }
-    
   });
 };
 
