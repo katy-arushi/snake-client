@@ -33,6 +33,6 @@ const setUpInput = function(conn) {
   return stdin;
 };
 
-module.exports = { 
-  setUpInput 
+module.exports = {
+  setUpInput
 };

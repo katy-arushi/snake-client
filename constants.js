@@ -6,8 +6,9 @@ const MOVE_DOWN_KEY = 's';
 const MOVE_RIGHT_KEY = 'd';
 const MESSAGES = {
   '1': 'Say: Hello there!',
-  '2': 'Say: Snek!',
-  '3': 'Say: woohoo!',
+  '2': 'Say: Snek is the best!',
+  '3': 'Say: Woohoo!',
+  '4': 'Say: I\'m winning!',
 };
 
 
